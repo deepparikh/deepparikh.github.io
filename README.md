@@ -1,2 +1,2 @@
 # deepparikh.github.io
-Deep'a Personal Website
+Deep's Personal Website
