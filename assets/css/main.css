@@ -3242,7 +3242,7 @@ input, select, textarea {
 
 /* Skills */
 #skillsGraph {
-    width: 100%;
+    width: 60%;
     height: 1300px;
     background-color: white;
     border-radius: 10px;
