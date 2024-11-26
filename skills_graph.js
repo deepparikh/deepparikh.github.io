@@ -2,8 +2,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const treeData = [
-        ["Autonomy", "Controls", "Planning", "Estimation", "Software", "Simulators", "Platforms"],
-        
+        ["Autonomy", "Controls", "Planning", "Estimation", "Software", "Simulators", "On-Board Compute"],
+            ["Controls", "Classical","Non-linear","Adaptive","Robust","Optimal","MPC"],
+                ["Classical","PID","Pole-Placement","Dynamic Inversion"],
+                ["Non-linear","Lyapunov stability","Gain scheduling","Feedback linearization","Sliding mode control","Backstepping"],
+                ["Adaptive","Gradient descent","MRAC","Multiple models"],
+                ["Optimal","Direct","Indirect"],
+                    ["Direct","LP","QP","NLP"],
+                    ["Indirect","Shooting","Collocation","Pseudospectral"],
     ];
 
     const elements = [];
