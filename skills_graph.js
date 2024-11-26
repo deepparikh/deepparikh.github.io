@@ -235,8 +235,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function resizeGraph() {
         // Recalculate the container size
-        const containerWidth = container.node().getBoundingClientRect().width;
-        const containerHeight = container.node().getBoundingClientRect().height;
+        const containerWidth = 900;
+        const containerHeight = 900;
     
         // Update the width and height of the SVG
         svg.attr("width", containerWidth)
