@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set base dimensions, scaling factors, and minimum size
     const baseWidth = 110;
     const baseHeight = 30;
-    const baseFontSize = 15;
+    const baseFontSize = 10;
 
     const simulation = d3.forceSimulation(elements)
         .force("link", d3.forceLink(links).id(d => d.id).distance(d => 73 - (d.source.level * 45))) 
