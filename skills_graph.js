@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const treeData = [
-        ["Autonomy", "Controls", "Planning", "Estimation", "Software", "Simulators", "On-Board Compute"],
+        ["Autonomy", "Controls", "Planning", "Estimation", "Software", "Simulators", "Platforms", "On-Board Compute"],
             ["Controls", "Classical","Non-linear","Adaptive","Robust","Optimal","MPC"],
                 ["Classical","PID","Pole-Placement","Dynamic Inversion"],
                 ["Non-linear","Lyapunov stability","Gain scheduling","Feedback linearization","Sliding mode control","Backstepping"],
@@ -10,6 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 ["Optimal","Direct","Indirect"],
                     ["Direct","LP","QP","NLP"],
                     ["Indirect","Shooting","Collocation","Pseudospectral"],
+            ["Planning","A*","RRT","Dijkstra's","Pose graph","SLAM"],    
+            ["Estimation","Least squares","EKF","Particle filter","GM","IMM","Monte Carlo"],
+            ["Software","Analysis","Production","Processes","Middleware"],
+                ["Analysis","MATLAB/Simulink","STK"],
+                ["Production","C++"],
+                ["Middleware","ROS","PX4","OpenCV"],
+                ["Processes","SIL","PIL","HIL","Unit test","Version control","Agile dev."],
+            ["Simulators","Gazebo","URSim","Simulink 6-DOF"],
+            ["Platforms","Manipulators","Mobile robots","UAVs","Spacecrafts"],
+            ["On-Board Compute","Jetson","Teensy"],
     ];
 
     const elements = [];
