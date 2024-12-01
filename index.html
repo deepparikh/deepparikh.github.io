@@ -23,23 +23,7 @@
 		
 		gtag('config', 'G-XQRCHNLC0D');
 		</script>
-
-		<script>
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
-			
-			for (i = 0; i < coll.length; i++) {
-			  coll[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var content = this.nextElementSibling;
-			    if (content.style.maxHeight){
-			      content.style.maxHeight = null;
-			    } else {
-			      content.style.maxHeight = content.scrollHeight + "px";
-			    } 
-			  });
-			}
-		</script>
+		
 	</head>
 	<body class="is-preload">
 
@@ -200,6 +184,24 @@
 						</div>
 					</section>
 
+				<!-- Needed for Pulications dropdown-->
+				<script>
+					var coll = document.getElementsByClassName("collapsible");
+					var i;
+					
+					for (i = 0; i < coll.length; i++) {
+					  coll[i].addEventListener("click", function() {
+					    this.classList.toggle("active");
+					    var content = this.nextElementSibling;
+					    if (content.style.maxHeight){
+					      content.style.maxHeight = null;
+					    } else {
+					      content.style.maxHeight = content.scrollHeight + "px";
+					    } 
+					  });
+					}
+				</script>
+				
 				<!-- Pulications -->
 					<section id="publications">
 						<h2>Publications as the primary author</h2>
@@ -216,6 +218,8 @@
 									<li>The framework is validated through an experimental analysis of the docking of two small satellites and the precision landing of an aerial vehicle.</li>
 								</ul>
 							</div>
+
+							<br>
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/8-fetyf_SrM?si=y4GTHG9QujTCUZgx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<br>
 							
