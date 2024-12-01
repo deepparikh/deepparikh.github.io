@@ -3253,24 +3253,25 @@ input, select, textarea {
 }
 
 .collapsible {
-  background-color: #777;
-  color: white;
+  background-color: #fff;
+  color: #a2a2a2;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 14pt;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #8c8c8c;
 }
 
 .collapsible:after {
   content: '\002B';
-  color: white;
+  color: #a2a2a2;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -3285,5 +3286,4 @@ input, select, textarea {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
 }
