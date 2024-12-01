@@ -23,6 +23,23 @@
 		
 		gtag('config', 'G-XQRCHNLC0D');
 		</script>
+
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var content = this.nextElementSibling;
+			    if (content.style.maxHeight){
+			      content.style.maxHeight = null;
+			    } else {
+			      content.style.maxHeight = content.scrollHeight + "px";
+			    } 
+			  });
+			}
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -188,13 +205,17 @@
 						<h2>Publications as the primary author</h2>
 						<ol>
 							<li><b>Parikh, D., Khowaja A.H., Majji, M., Robust Proximity Operations using Probabilistic Markov Models, Under review for ICRA 2025.</b><a href="https://arxiv.org/pdf/2409.19062">https://arxiv.org/pdf/2409.19062</a></li>
-							<ul>
-								<li>A Markov decision process-based state switching is devised, implemented, and analyzed for proximity operations of various autonomous vehicles. </li>
-								<li>The framework contains a pose estimator along with a multi-state guidance algorithm. The unified pose estimator leverages the extended Kalman filter for the fusion of measurements from rate gyroscopes, monocular vision, and ultra-wideband radar sensors. </li>
-								<li>It is also equipped with Mahalonobis distance-based outlier rejection and underweighting of measurements for robust performance. </li>
-								<li>The use of probabilistic Markov models to transition between various guidance modes is proposed to enable robust and efficient proximity operations. </li>
-								<li>The framework is validated through an experimental analysis of the docking of two small satellites and the precision landing of an aerial vehicle.</li>
-							</ul>	
+							
+							<button class="collapsible">More Details</button>
+							<div class="content">
+								<ul>
+									<li>A Markov decision process-based state switching is devised, implemented, and analyzed for proximity operations of various autonomous vehicles. </li>
+									<li>The framework contains a pose estimator along with a multi-state guidance algorithm. The unified pose estimator leverages the extended Kalman filter for the fusion of measurements from rate gyroscopes, monocular vision, and ultra-wideband radar sensors. </li>
+									<li>It is also equipped with Mahalonobis distance-based outlier rejection and underweighting of measurements for robust performance. </li>
+									<li>The use of probabilistic Markov models to transition between various guidance modes is proposed to enable robust and efficient proximity operations. </li>
+									<li>The framework is validated through an experimental analysis of the docking of two small satellites and the precision landing of an aerial vehicle.</li>
+								</ul>
+							</div>
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/8-fetyf_SrM?si=y4GTHG9QujTCUZgx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<br>
 							
