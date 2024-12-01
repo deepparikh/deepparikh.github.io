@@ -3256,7 +3256,7 @@ input, select, textarea {
   background-color: #fff;
   color: #a2a2a2;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 14pt;
+  font-size: 16pt;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -3266,7 +3266,7 @@ input, select, textarea {
 }
 
 .active, .collapsible:hover {
-  background-color: #8c8c8c;
+  background-color: #f2f2f2;
 }
 
 .collapsible:after {
@@ -3286,4 +3286,5 @@ input, select, textarea {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  background-color: #f2f2f2;
 }
